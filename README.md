@@ -22,10 +22,10 @@ A modern Daily Horoscope web app built using HTML, CSS & JavaScript.
 ### 📸 Screenshots
 
 #### Home Page
-![Home](screenshot 1.png)
+![Home](screenshot1.png)
 
 #### Result Page
-![Result](screenshot 2.png)
+![Result](screenshot2.png)
 
 
 ⭐ If you like this project, give it a star!
