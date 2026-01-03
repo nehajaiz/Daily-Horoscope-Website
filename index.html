@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Horoscope</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body class="light-theme">
+  <div class="stars"></div>
+
+  <div class="container">
+    <h1>🌟 Daily Horoscope 🌟</h1>
+
+    <button id="theme-toggle">Switch to Dark Theme</button>
+
+    <div class="astro-clock">
+      <p>Astrological Time: <span id="current-time"></span></p>
+      <p>Dominant Planet: <span id="dominant-planet"></span></p>
+    </div>
+
+    <select id="zodiac-select">
+      <option value="">Select Zodiac</option>
+      <option>Aries</option><option>Taurus</option><option>Gemini</option>
+      <option>Cancer</option><option>Leo</option><option>Virgo</option>
+      <option>Libra</option><option>Scorpio</option><option>Sagittarius</option>
+      <option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+    </select>
+
+    <select id="mood-select">
+      <option>General</option>
+      <option>Love</option>
+      <option>Career</option>
+      <option>Health</option>
+    </select>
+
+    <div class="mood-tracker">
+      Mood: <input type="range" id="mood-slider" min="1" max="10" value="5">
+      <span id="mood-value">5</span>
+    </div>
+
+    <button id="generate">Get Horoscope</button>
+
+    <div id="horoscope" class="horoscope">
+      <h2 id="title"></h2>
+      <p id="text"></p>
+
+      <h3>Energy Level</h3>
+      <div class="meter"><div id="energy-fill" class="meter-fill"></div></div>
+      <span id="energy-percent"></span>
+
+      <h3>Affirmation</h3>
+      <p id="affirmation"></p>
+
+      <button id="voice">🔊 Read Aloud</button>
+      <button id="save">⭐ Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
